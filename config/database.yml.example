@@ -1,0 +1,18 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: rupor
+  password:
+
+development:
+  <<: *defaults
+  database: rupor_development
+
+test:
+  <<: *defaults
+  database: rupor_test
+
+production:
+  <<: *defaults
+  database: rupor_production
